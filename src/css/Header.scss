@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  span {
+    color: tomato;
+  }
+  ul {
+    color: #ccc;
+    list-style: none;
+  }
+  .active {
+    color: red;
+  }
+}
