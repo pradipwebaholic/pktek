@@ -12,19 +12,15 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import fontawesome from '@fortawesome/fontawesome';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare } from '@fortawesome/fontawesome-free-solid';
-fontawesome.library.add(faCheckSquare);
+
 function App() {
   return (
     <div className="container">
+      
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="private" element={<Dashboard />}>
-          
-          <Route path="about" element={<About />} />
           <Route path="home/:id" element={<Home />} />
         </Route>
       </Routes>

@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-
-import '../css/Header.scss';
+import './Header.scss';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -83,8 +81,8 @@ const Header = () => {
   };
   return (
   
-       <AppBar position="static">
-      <Container maxWidth="xl">
+       <AppBar position="fixed">
+      
         <Toolbar disableGutters>
           
 
@@ -181,7 +179,7 @@ const Header = () => {
             </Menu>
           </Box>
         </Toolbar>
-      </Container>
+      
     </AppBar>
     
   );

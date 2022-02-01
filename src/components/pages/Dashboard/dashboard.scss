@@ -1,0 +1,11 @@
+.main-content.Dashboard{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+   & > div:nth-child(1){
+     width:auto;
+  }
+   & > div:nth-child(2){
+    width:calc(100% - 100px)
+ }
+}

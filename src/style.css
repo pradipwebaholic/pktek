@@ -22,12 +22,13 @@
     gap: 10px;
    
    
-    grid-template-columns: 2fr 1fr auto repeat(9, 1fr);
+    grid-template-columns: 3f repeat(9, 1fr);
     grid-template-rows:  75px auto 50px;
     grid-template-areas:
-      'H H  H H H H H H H H H H'
-      'S S  M M M M M M M M M M'
-      'F F  F F F F F F F F F F';
+    'H H  H H H H H H H H H H'
+    'M M  M M M M M M M M M M'
+    'F F  F F F F F F F F F F' ;
+   
   }
   /* Boxes Chils- grid Items*/
   .container > * {
@@ -36,21 +37,20 @@
     /*align-items: center;
     justify-items: center;*/
     word-wrap: break-word;
-    padding: 10px;
+   
   }
-  .container > *:nth-child(1) {
+  .container > header {
     grid-area: H;
   }
-  .container > *:nth-child(3) {
-    grid-area: S;
-    min-height: 300px;
-    background: #99929247;
-  }
-  .container > *:nth-child(2) {
+  
+  .container > .main-content {
     grid-area: M;
     background: #99929247;
+    min-height: calc(100vh - 120px);
+    top: -15px;
+    position: relative;
   }
-  .container > *:nth-child(4) {
+  .container > .footer {
     grid-area: F;
     background: #99929247;
   }

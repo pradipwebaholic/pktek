@@ -6,6 +6,7 @@ import { leftCss } from '../css/';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import {Typography} from '@mui/material'
+import Paper from '@mui/material/Paper';
 
 
 
@@ -13,8 +14,8 @@ const Aside = () => {
   
   return (
     <aside>
-      
-   <Stack direction="row" spacing={2}>
+  
+   <Stack  direction="row" spacing={2}>
       
       <Avatar
         alt="Remy Sharp"
@@ -29,7 +30,7 @@ const Aside = () => {
        Hi, I’m Pradip. I have 9+ years of experience in Frontend Development. I have discovered my interest for Books lately. I spend most of my time coding and dreaming. Writing is my hobby and I love to have an spiritited discussion on any topic related to Science, Religion, Politics, Economics and current affair.
        </Typography>
       
-       
+      
     </aside>
   );
 };

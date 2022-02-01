@@ -1,0 +1,7 @@
+/* This is About*/
+.container {
+   grid-template-areas:
+      'H H  H H H H H H H H H H'
+      'M M  M M M M M M M M S S'
+      'F F  F F F F F F F F F F';
+  }
